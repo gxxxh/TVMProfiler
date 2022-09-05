@@ -1,13 +1,12 @@
 import numpy as np
 import tvm
 from tvm.contrib import graph_executor
+from tvm.contrib.debugger import debug_executor
 from tvm.autotvm.tuner import XGBTuner, GATuner, RandomTuner, GridSearchTuner
 from tvm import autotvm, relay
 import os
 from abc import abstractmethod
 from model.runner.util import WriteConfigSpace
-
-
 
 
 class ModelRunner():
@@ -19,8 +18,7 @@ class ModelRunner():
         self.tuner = args.tuner
         self.input_name = None  # todo 从参数中移除
         self.trials = 10
-        self.debug = False  # todo add args
-
+        self.debug = args.debug  # todo add args
         # mod info
         self.mod = None
         self.params = None
@@ -77,20 +75,34 @@ class ModelRunner():
         module = graph_executor.GraphModule(lib["default"](dev))
         return lib, module, dev
 
+    def getLibModuleDevDebug(self, config={}):
+        dev = tvm.device(str(self.target), 0)
+        with tvm.transform.PassContext(opt_level=3, config=config):
+            lib = relay.build(self.mod, target=self.target, params=self.params)
+        # module = debug_executor.graphmoduledebug(lib["default"](dev))
+        module = debug_executor.create(lib.get_graph_json(), lib.get_lib(), dev,"/root/guohao/TVMProfiler/data/" )
+        return lib, module, dev
+
     def getRunTimeModule(self):
         input_data = self.loadInputData()
-        lib, module, dev = self.getLibModuleDev()
+        if self.debug:
+            lib, module, dev = self.getLibModuleDevDebug()
+        else:
+            lib, module, dev = self.getLibModuleDev()
         module.set_input(self.input_name, input_data)
         return module, dev
 
     def profilePerformance(self, module, dev, timing_number=10, timing_repeat=10):
+
+        module.run(dump_output=False)
+        # time_evaluator会远程调用C++的run,但是文件的保存在python代码里。
         timer = module.module.time_evaluator("run", dev, number=timing_number, repeat=timing_repeat)
         unoptimized = np.array(timer().results) * 1000 / timing_repeat
         print("runned")
         unoptimized = {
             "mean": np.mean(unoptimized),
             "median": np.median(unoptimized),
-            "std": np.std(unoptimized),
+        "std": np.std(unoptimized),
         }
         print(unoptimized)
         return timer

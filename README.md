@@ -12,6 +12,7 @@
   - [x] 数据库：直接用时序数据库 or 定义Prometheus exporter接口
   - [x] 写入数据库， （日志收集→写入数据库）
   - [x] 监控: cpu & gpu, 检测哪些指标？ 是否能定位到每个op执行时的指标监控？ 监控数据写入数据库
+    - python papi库已经被对接到tvm中了
 - 内存测量
   - [x] 如何测量？ 定位malloc or
 - 前端: 使用prometheus exporter可以减少前端的开发

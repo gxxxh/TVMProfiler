@@ -3,6 +3,7 @@ import os
 from tvm import autotvm
 import argparse
 from model_runner import local_nns_runner
+from model_profiler import tvm_profiler
 
 def dict2args(args_dict):
     parser = argparse.ArgumentParser()
@@ -31,4 +32,6 @@ if __name__ == '__main__':
     }
     args = dict2args(args_dict)
     model = local_nns_runner.ResNet18Runner(args)
-    model.runOnTVM()
+    with tvm_profiler.Profiler() as tp:
+        model.runOnTVM()
+    print("finish")

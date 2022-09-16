@@ -25,13 +25,19 @@
 ### 主要功能集成
 - OpBench模块化
   - [x] runner
-  - [ ] model importer
+  - [x] model importer
   - [ ] routes
 - 时间测量
-  - [ ] 调研以下思路可行性
-    - [ ] 思路1: 如果算子运行时间打印在tvm主进程的日志中，通过日志离线监测
-    - [ ] 思路2：实时监测日志输出：监测进程stdout/stderr
-    - [ ] 思路3：修改TVM源代码，添加实现LOG_TRACE用于打印所需日志
+  - [x] 调研以下思路可行性
+    - [x] 思路1: 如果算子运行时间打印在tvm主进程的日志中，通过日志离线监测。不易用
+    - [x] 思路2：实时监测日志输出：监测进程stdout/stderr: 通过wrapper重定向。
+    - [x] 思路3：修改TVM源代码，添加实现LOG_TRACE用于打印所需日志。暂不考虑修改源码
+  - [x] 具体实现
+    - [ ] 通过重定向的方式实现wrapperL
+      - [x] 直接重定向，直接对stdout和stderr进行赋值重定向，只能重定向python端的信息，不能重定向C++端的信息
+      - [x] 使用管道
+    - [ ] 日志分析，导出chrome trace和table
+    - 
 - 硬件资源监测
   - [ ] 调研如何监测runtime进程：
     - [ ] runtime进程如何启动？

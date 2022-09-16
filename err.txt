@@ -1,0 +1,683 @@
+Using injective.cpu for add based on highest priority (10)
+/home/gh/tvm/python/tvm/driver/build_module.py:267: UserWarning: target_host parameter is going to be deprecated. Please pass in tvm.target.Target(target, host=target_host) instead.
+  "target_host parameter is going to be deprecated. "
+Using injective.cpu for sqrt based on highest priority (10)
+Using injective.cpu for divide based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for negative based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for sqrt based on highest priority (10)
+Using injective.cpu for divide based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for negative based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for sqrt based on highest priority (10)
+Using injective.cpu for divide based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for negative based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for sqrt based on highest priority (10)
+Using injective.cpu for divide based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for negative based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for sqrt based on highest priority (10)
+Using injective.cpu for divide based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for negative based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for sqrt based on highest priority (10)
+Using injective.cpu for divide based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for negative based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for sqrt based on highest priority (10)
+Using injective.cpu for divide based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for negative based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for sqrt based on highest priority (10)
+Using injective.cpu for divide based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for negative based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for sqrt based on highest priority (10)
+Using injective.cpu for divide based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for negative based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for sqrt based on highest priority (10)
+Using injective.cpu for divide based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for negative based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for sqrt based on highest priority (10)
+Using injective.cpu for divide based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for negative based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for sqrt based on highest priority (10)
+Using injective.cpu for divide based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for negative based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for sqrt based on highest priority (10)
+Using injective.cpu for divide based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for negative based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for sqrt based on highest priority (10)
+Using injective.cpu for divide based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for negative based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for sqrt based on highest priority (10)
+Using injective.cpu for divide based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for negative based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for sqrt based on highest priority (10)
+Using injective.cpu for divide based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for negative based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for sqrt based on highest priority (10)
+Using injective.cpu for divide based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for negative based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for sqrt based on highest priority (10)
+Using injective.cpu for divide based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for negative based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for sqrt based on highest priority (10)
+Using injective.cpu for divide based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for negative based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for squeeze based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for divide based on highest priority (10)
+Using injective.cpu for squeeze based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for squeeze based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for divide based on highest priority (10)
+Using injective.cpu for squeeze based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for squeeze based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for divide based on highest priority (10)
+Using injective.cpu for squeeze based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for squeeze based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for divide based on highest priority (10)
+Using injective.cpu for squeeze based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for squeeze based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for divide based on highest priority (10)
+Using injective.cpu for squeeze based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for squeeze based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for divide based on highest priority (10)
+Using injective.cpu for squeeze based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for squeeze based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for divide based on highest priority (10)
+Using injective.cpu for squeeze based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for squeeze based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for divide based on highest priority (10)
+Using injective.cpu for squeeze based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for squeeze based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for divide based on highest priority (10)
+Using injective.cpu for squeeze based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for multiply based on highest priority (10)
+Implementation conv2d_nchw.x86 for nn.conv2d has cost 9.59e-05
+Using conv2d_nchw.x86 for nn.conv2d based on lowest cost (9.59e-05)
+Implementation conv2d_nchw.x86 for nn.conv2d has cost 1.07e-04
+Using conv2d_nchw.x86 for nn.conv2d based on lowest cost (1.07e-04)
+Implementation conv2d_nchw.x86 for nn.conv2d has cost 0.00e+00
+Using conv2d_nchw.x86 for nn.conv2d based on lowest cost (0.00e+00)
+Implementation conv2d_nchw.x86 for nn.conv2d has cost 1.44e-05
+Using conv2d_nchw.x86 for nn.conv2d based on lowest cost (1.44e-05)
+Implementation conv2d_nchw.x86 for nn.conv2d has cost 0.00e+00
+Using conv2d_nchw.x86 for nn.conv2d based on lowest cost (0.00e+00)
+Implementation conv2d_nchw.x86 for nn.conv2d has cost 0.00e+00
+Using conv2d_nchw.x86 for nn.conv2d based on lowest cost (0.00e+00)
+Implementation conv2d_nchw.x86 for nn.conv2d has cost 6.85e-05
+Using conv2d_nchw.x86 for nn.conv2d based on lowest cost (6.85e-05)
+Implementation conv2d_nchw.x86 for nn.conv2d has cost 1.07e-04
+Using conv2d_nchw.x86 for nn.conv2d based on lowest cost (1.07e-04)
+Implementation conv2d_nchw.x86 for nn.conv2d has cost 8.22e-06
+Using conv2d_nchw.x86 for nn.conv2d based on lowest cost (8.22e-06)
+Implementation conv2d_nchw.x86 for nn.conv2d has cost 0.00e+00
+Using conv2d_nchw.x86 for nn.conv2d based on lowest cost (0.00e+00)
+Implementation conv2d_nchw.x86 for nn.conv2d has cost 0.00e+00
+Using conv2d_nchw.x86 for nn.conv2d based on lowest cost (0.00e+00)
+Implementation conv2d_nchw.x86 for nn.conv2d has cost 7.55e-05
+Using conv2d_nchw.x86 for nn.conv2d based on lowest cost (7.55e-05)
+Implementation conv2d_nchw.x86 for nn.conv2d has cost 1.02e-04
+Using conv2d_nchw.x86 for nn.conv2d based on lowest cost (1.02e-04)
+Implementation conv2d_nchw.x86 for nn.conv2d has cost 8.28e-06
+Using conv2d_nchw.x86 for nn.conv2d based on lowest cost (8.28e-06)
+Implementation conv2d_nchw.x86 for nn.conv2d has cost 0.00e+00
+Using conv2d_nchw.x86 for nn.conv2d based on lowest cost (0.00e+00)
+Implementation conv2d_nchw.x86 for nn.conv2d has cost 0.00e+00
+Using conv2d_nchw.x86 for nn.conv2d based on lowest cost (0.00e+00)
+Implementation conv2d_nchw.x86 for nn.conv2d has cost 6.82e-05
+Using conv2d_nchw.x86 for nn.conv2d based on lowest cost (6.82e-05)
+Implementation conv2d_nchw.x86 for nn.conv2d has cost 1.09e-04
+Using conv2d_nchw.x86 for nn.conv2d based on lowest cost (1.09e-04)
+Implementation conv2d_nchw.x86 for nn.conv2d has cost 7.91e-06
+Using conv2d_nchw.x86 for nn.conv2d based on lowest cost (7.91e-06)
+Implementation conv2d_nchw.x86 for nn.conv2d has cost 0.00e+00
+Using conv2d_nchw.x86 for nn.conv2d based on lowest cost (0.00e+00)
+Implementation conv2d_nchw.x86 for nn.conv2d has cost 0.00e+00
+Using conv2d_nchw.x86 for nn.conv2d based on lowest cost (0.00e+00)
+One or more operators have not been tuned. Please tune your model for better performance. Use DEBUG logging level to see more details.
+Using dense_pack.x86 for nn.dense based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for expand_dims based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Implementation conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc has cost 0.00e+00
+Using conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc based on lowest cost (0.00e+00)
+Implementation injective.cpu for add has cost 0.00e+00
+Using injective.cpu for add based on lowest cost (0.00e+00)
+Implementation injective.cpu for nn.relu has cost 0.00e+00
+Using injective.cpu for nn.relu based on lowest cost (0.00e+00)
+Using pool.cpu for nn.max_pool2d based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for nn.relu based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Implementation conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc has cost 0.00e+00
+Using conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc based on lowest cost (0.00e+00)
+Implementation injective.cpu for add has cost 0.00e+00
+Using injective.cpu for add based on lowest cost (0.00e+00)
+Implementation injective.cpu for nn.relu has cost 0.00e+00
+Using injective.cpu for nn.relu based on lowest cost (0.00e+00)
+Using injective.cpu for layout_transform based on highest priority (10)
+Implementation conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc has cost 0.00e+00
+Using conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc based on lowest cost (0.00e+00)
+Using injective.cpu for layout_transform based on highest priority (10)
+Implementation conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc has cost 0.00e+00
+Using conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc based on lowest cost (0.00e+00)
+Implementation injective.cpu for add has cost 0.00e+00
+Using injective.cpu for add based on lowest cost (0.00e+00)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for nn.relu based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Implementation conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc has cost 0.00e+00
+Using conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc based on lowest cost (0.00e+00)
+Implementation injective.cpu for add has cost 0.00e+00
+Using injective.cpu for add based on lowest cost (0.00e+00)
+Implementation injective.cpu for add has cost 0.00e+00
+Using injective.cpu for add based on lowest cost (0.00e+00)
+Implementation injective.cpu for nn.relu has cost 0.00e+00
+Using injective.cpu for nn.relu based on lowest cost (0.00e+00)
+Implementation conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc has cost 0.00e+00
+Using conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc based on lowest cost (0.00e+00)
+Implementation injective.cpu for add has cost 0.00e+00
+Using injective.cpu for add based on lowest cost (0.00e+00)
+Implementation injective.cpu for nn.relu has cost 0.00e+00
+Using injective.cpu for nn.relu based on lowest cost (0.00e+00)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Implementation conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc has cost 0.00e+00
+Using conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc based on lowest cost (0.00e+00)
+Implementation conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc has cost 0.00e+00
+Using conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc based on lowest cost (0.00e+00)
+Implementation injective.cpu for add has cost 0.00e+00
+Using injective.cpu for add based on lowest cost (0.00e+00)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for nn.relu based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Implementation conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc has cost 0.00e+00
+Using conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc based on lowest cost (0.00e+00)
+Implementation injective.cpu for add has cost 0.00e+00
+Using injective.cpu for add based on lowest cost (0.00e+00)
+Implementation injective.cpu for nn.relu has cost 0.00e+00
+Using injective.cpu for nn.relu based on lowest cost (0.00e+00)
+Using injective.cpu for layout_transform based on highest priority (10)
+Implementation conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc has cost 0.00e+00
+Using conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc based on lowest cost (0.00e+00)
+Implementation injective.cpu for add has cost 0.00e+00
+Using injective.cpu for add based on lowest cost (0.00e+00)
+Implementation injective.cpu for add has cost 0.00e+00
+Using injective.cpu for add based on lowest cost (0.00e+00)
+Implementation injective.cpu for nn.relu has cost 0.00e+00
+Using injective.cpu for nn.relu based on lowest cost (0.00e+00)
+Using injective.cpu for layout_transform based on highest priority (10)
+Implementation conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc has cost 0.00e+00
+Using conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc based on lowest cost (0.00e+00)
+Implementation injective.cpu for add has cost 0.00e+00
+Using injective.cpu for add based on lowest cost (0.00e+00)
+Implementation injective.cpu for nn.relu has cost 0.00e+00
+Using injective.cpu for nn.relu based on lowest cost (0.00e+00)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Implementation conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc has cost 0.00e+00
+Using conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc based on lowest cost (0.00e+00)
+Implementation conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc has cost 0.00e+00
+Using conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc based on lowest cost (0.00e+00)
+Implementation injective.cpu for add has cost 0.00e+00
+Using injective.cpu for add based on lowest cost (0.00e+00)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for nn.relu based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Implementation conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc has cost 0.00e+00
+Using conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc based on lowest cost (0.00e+00)
+Implementation injective.cpu for add has cost 0.00e+00
+Using injective.cpu for add based on lowest cost (0.00e+00)
+Implementation injective.cpu for nn.relu has cost 0.00e+00
+Using injective.cpu for nn.relu based on lowest cost (0.00e+00)
+Using injective.cpu for layout_transform based on highest priority (10)
+Implementation conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc has cost 0.00e+00
+Using conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc based on lowest cost (0.00e+00)
+Implementation injective.cpu for add has cost 0.00e+00
+Using injective.cpu for add based on lowest cost (0.00e+00)
+Implementation injective.cpu for add has cost 0.00e+00
+Using injective.cpu for add based on lowest cost (0.00e+00)
+Implementation injective.cpu for nn.relu has cost 0.00e+00
+Using injective.cpu for nn.relu based on lowest cost (0.00e+00)
+Using injective.cpu for layout_transform based on highest priority (10)
+Implementation conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc has cost 0.00e+00
+Using conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc based on lowest cost (0.00e+00)
+Implementation injective.cpu for add has cost 0.00e+00
+Using injective.cpu for add based on lowest cost (0.00e+00)
+Implementation injective.cpu for nn.relu has cost 0.00e+00
+Using injective.cpu for nn.relu based on lowest cost (0.00e+00)
+Using injective.cpu for layout_transform based on highest priority (10)
+Implementation conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc has cost 0.00e+00
+Using conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc based on lowest cost (0.00e+00)
+Implementation conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc has cost 0.00e+00
+Using conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc based on lowest cost (0.00e+00)
+Implementation injective.cpu for add has cost 0.00e+00
+Using injective.cpu for add based on lowest cost (0.00e+00)
+Using injective.cpu for add based on highest priority (10)
+Using injective.cpu for nn.relu based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Implementation conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc has cost 0.00e+00
+Using conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc based on lowest cost (0.00e+00)
+Implementation injective.cpu for add has cost 0.00e+00
+Using injective.cpu for add based on lowest cost (0.00e+00)
+Implementation injective.cpu for nn.relu has cost 0.00e+00
+Using injective.cpu for nn.relu based on lowest cost (0.00e+00)
+Implementation conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc has cost 0.00e+00
+Using conv2d_NCHWc.x86 for nn.contrib_conv2d_NCHWc based on lowest cost (0.00e+00)
+Implementation injective.cpu for add has cost 0.00e+00
+Using injective.cpu for add based on lowest cost (0.00e+00)
+Implementation injective.cpu for multiply has cost 0.00e+00
+Using injective.cpu for multiply based on lowest cost (0.00e+00)
+Implementation injective.cpu for add has cost 0.00e+00
+Using injective.cpu for add based on lowest cost (0.00e+00)
+Implementation injective.cpu for nn.relu has cost 0.00e+00
+Using injective.cpu for nn.relu based on lowest cost (0.00e+00)
+Using adaptive_pool.cpu for nn.global_avg_pool2d based on highest priority (10)
+Using injective.cpu for layout_transform based on highest priority (10)
+Using injective.cpu for nn.batch_flatten based on highest priority (10)
+Using dense_pack.x86 for nn.contrib_dense_pack based on highest priority (10)
+Using injective.cpu for add based on highest priority (10)
+Using softmax.x86 for nn.softmax based on highest priority (10)
+[17:38:29] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #0 tvmgen_default_fused_add_layout_transform:
+[17:38:29] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 9.79719 us/iter
+[17:38:29] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #1 tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_nn_relu:
+[17:38:29] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 76464.6 us/iter
+[17:38:29] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #2 tvmgen_default_fused_nn_max_pool2d_add_nn_relu:
+[17:38:29] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 81.6226 us/iter
+[17:38:29] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #3 tvmgen_default_fused_layout_transform:
+[17:38:29] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 12.4257 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #4 tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_nn_relu_1:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 20963.2 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #5 tvmgen_default_fused_layout_transform_1:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 8.67315 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #6 tvmgen_default_fused_layout_transform_1_1:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 8.65385 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #7 tvmgen_default_fused_nn_contrib_conv2d_NCHWc:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 4136.09 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #8 tvmgen_default_fused_layout_transform_2:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 8.727 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #9 tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 944.004 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #10 tvmgen_default_fused_add_nn_relu_layout_transform:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 9.54764 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #11 tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_nn_relu_1_1:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 947.335 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #12 tvmgen_default_fused_layout_transform_3:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 9.34471 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #13 tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_add_nn_relu:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 15695.7 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #14 tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_nn_relu_2:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 608.69 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #15 tvmgen_default_fused_layout_transform_3_1:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 8.46297 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #16 tvmgen_default_fused_layout_transform_4:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 9.2235 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #17 tvmgen_default_fused_nn_contrib_conv2d_NCHWc_1:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 59.665 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #18 tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_1:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 887.257 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #19 tvmgen_default_fused_add_nn_relu_layout_transform_1:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 8.79824 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #20 tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_nn_relu_3:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 880.869 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #21 tvmgen_default_fused_layout_transform_5:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 8.88898 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #22 tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_add_nn_relu_1:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 886.442 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #23 tvmgen_default_fused_layout_transform_6:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 8.65446 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #24 tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_nn_relu_4:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 507.723 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #25 tvmgen_default_fused_layout_transform_7:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 8.29399 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #26 tvmgen_default_fused_layout_transform_8:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 8.71592 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #27 tvmgen_default_fused_nn_contrib_conv2d_NCHWc_2:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 59.4584 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #28 tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_2:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 881.957 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #29 tvmgen_default_fused_add_nn_relu_layout_transform_2:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 9.08589 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #30 tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_nn_relu_5:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 852.791 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #31 tvmgen_default_fused_layout_transform_9:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 8.57364 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #32 tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_add_nn_relu_2:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 887.254 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #33 tvmgen_default_fused_layout_transform_10:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 9.01774 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #34 tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_nn_relu_6:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 473.662 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #35 tvmgen_default_fused_layout_transform_11:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 7.98056 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #36 tvmgen_default_fused_layout_transform_9_1:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 8.26724 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #37 tvmgen_default_fused_nn_contrib_conv2d_NCHWc_3:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 570.618 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #38 tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_3:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 856.164 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #39 tvmgen_default_fused_add_nn_relu_layout_transform_3:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 8.10155 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #40 tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_nn_relu_7:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 865.001 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #41 tvmgen_default_fused_layout_transform_11_1:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 7.86513 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #42 tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_multiply_add_nn_relu:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 842.931 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #43 tvmgen_default_fused_nn_global_avg_pool2d:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 17.433 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #44 tvmgen_default_fused_layout_transform_nn_batch_flatten:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 0.436999 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #45 tvmgen_default_fused_nn_contrib_dense_pack_add:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 11.6945 us/iter
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:95: Op #46 tvmgen_default_fused_nn_softmax:
+[17:38:30] /home/gh/tvm/src/runtime/graph_executor/debug/graph_executor_debug.cc:98: Iteration: 0: 8.70726 us/iter
+running node=0, output_ind=0, with node_name: data
+running node=1, output_ind=0, with node_name: p0
+running node=2, output_ind=0, with node_name: tvmgen_default_fused_add_layout_transform
+running node=3, output_ind=0, with node_name: p1
+running node=4, output_ind=0, with node_name: p2
+running node=5, output_ind=0, with node_name: tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_nn_relu
+running node=6, output_ind=0, with node_name: p3
+running node=7, output_ind=0, with node_name: tvmgen_default_fused_nn_max_pool2d_add_nn_relu
+running node=8, output_ind=0, with node_name: tvmgen_default_fused_layout_transform
+running node=9, output_ind=0, with node_name: p4
+running node=10, output_ind=0, with node_name: p5
+running node=11, output_ind=0, with node_name: tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_nn_relu_1
+running node=12, output_ind=0, with node_name: tvmgen_default_fused_layout_transform_1
+running node=13, output_ind=0, with node_name: p6
+running node=14, output_ind=0, with node_name: tvmgen_default_fused_layout_transform_1_1
+running node=15, output_ind=0, with node_name: p7
+running node=16, output_ind=0, with node_name: tvmgen_default_fused_nn_contrib_conv2d_NCHWc
+running node=17, output_ind=0, with node_name: tvmgen_default_fused_layout_transform_2
+running node=18, output_ind=0, with node_name: tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add
+running node=19, output_ind=0, with node_name: p8
+running node=20, output_ind=0, with node_name: tvmgen_default_fused_add_nn_relu_layout_transform
+running node=21, output_ind=0, with node_name: p9
+running node=22, output_ind=0, with node_name: p10
+running node=23, output_ind=0, with node_name: tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_nn_relu_1_1
+running node=24, output_ind=0, with node_name: tvmgen_default_fused_layout_transform_3
+running node=25, output_ind=0, with node_name: p11
+running node=26, output_ind=0, with node_name: p12
+running node=27, output_ind=0, with node_name: tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_add_nn_relu
+running node=28, output_ind=0, with node_name: p13
+running node=29, output_ind=0, with node_name: p14
+running node=30, output_ind=0, with node_name: tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_nn_relu_2
+running node=31, output_ind=0, with node_name: tvmgen_default_fused_layout_transform_3_1
+running node=32, output_ind=0, with node_name: p15
+running node=33, output_ind=0, with node_name: tvmgen_default_fused_layout_transform_4
+running node=34, output_ind=0, with node_name: p16
+running node=35, output_ind=0, with node_name: tvmgen_default_fused_nn_contrib_conv2d_NCHWc_1
+running node=36, output_ind=0, with node_name: tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_1
+running node=37, output_ind=0, with node_name: p17
+running node=38, output_ind=0, with node_name: tvmgen_default_fused_add_nn_relu_layout_transform_1
+running node=39, output_ind=0, with node_name: p18
+running node=40, output_ind=0, with node_name: p19
+running node=41, output_ind=0, with node_name: tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_nn_relu_3
+running node=42, output_ind=0, with node_name: tvmgen_default_fused_layout_transform_5
+running node=43, output_ind=0, with node_name: p20
+running node=44, output_ind=0, with node_name: p21
+running node=45, output_ind=0, with node_name: tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_add_nn_relu_1
+running node=46, output_ind=0, with node_name: tvmgen_default_fused_layout_transform_6
+running node=47, output_ind=0, with node_name: p22
+running node=48, output_ind=0, with node_name: p23
+running node=49, output_ind=0, with node_name: tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_nn_relu_4
+running node=50, output_ind=0, with node_name: tvmgen_default_fused_layout_transform_7
+running node=51, output_ind=0, with node_name: p24
+running node=52, output_ind=0, with node_name: tvmgen_default_fused_layout_transform_8
+running node=53, output_ind=0, with node_name: p25
+running node=54, output_ind=0, with node_name: tvmgen_default_fused_nn_contrib_conv2d_NCHWc_2
+running node=55, output_ind=0, with node_name: tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_2
+running node=56, output_ind=0, with node_name: p26
+running node=57, output_ind=0, with node_name: tvmgen_default_fused_add_nn_relu_layout_transform_2
+running node=58, output_ind=0, with node_name: p27
+running node=59, output_ind=0, with node_name: p28
+running node=60, output_ind=0, with node_name: tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_nn_relu_5
+running node=61, output_ind=0, with node_name: tvmgen_default_fused_layout_transform_9
+running node=62, output_ind=0, with node_name: p29
+running node=63, output_ind=0, with node_name: p30
+running node=64, output_ind=0, with node_name: tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_add_nn_relu_2
+running node=65, output_ind=0, with node_name: tvmgen_default_fused_layout_transform_10
+running node=66, output_ind=0, with node_name: p31
+running node=67, output_ind=0, with node_name: p32
+running node=68, output_ind=0, with node_name: tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_nn_relu_6
+running node=69, output_ind=0, with node_name: tvmgen_default_fused_layout_transform_11
+running node=70, output_ind=0, with node_name: p33
+running node=71, output_ind=0, with node_name: tvmgen_default_fused_layout_transform_9_1
+running node=72, output_ind=0, with node_name: p34
+running node=73, output_ind=0, with node_name: tvmgen_default_fused_nn_contrib_conv2d_NCHWc_3
+running node=74, output_ind=0, with node_name: tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_3
+running node=75, output_ind=0, with node_name: p35
+running node=76, output_ind=0, with node_name: tvmgen_default_fused_add_nn_relu_layout_transform_3
+running node=77, output_ind=0, with node_name: p36
+running node=78, output_ind=0, with node_name: p37
+running node=79, output_ind=0, with node_name: tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_nn_relu_7
+running node=80, output_ind=0, with node_name: tvmgen_default_fused_layout_transform_11_1
+running node=81, output_ind=0, with node_name: p38
+running node=82, output_ind=0, with node_name: p39
+running node=83, output_ind=0, with node_name: p40
+running node=84, output_ind=0, with node_name: tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_multiply_add_nn_relu
+running node=85, output_ind=0, with node_name: tvmgen_default_fused_nn_global_avg_pool2d
+running node=86, output_ind=0, with node_name: tvmgen_default_fused_layout_transform_nn_batch_flatten
+running node=87, output_ind=0, with node_name: p41
+running node=88, output_ind=0, with node_name: p42
+running node=89, output_ind=0, with node_name: tvmgen_default_fused_nn_contrib_dense_pack_add
+running node=90, output_ind=0, with node_name: tvmgen_default_fused_nn_softmax

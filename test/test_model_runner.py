@@ -2,8 +2,7 @@ import unittest
 import os
 from tvm import autotvm
 import argparse
-from model.runner import local_model_runner, transformer_model_runner
-
+from model_runner import local_nns_runner
 
 def dict2args(args_dict):
     parser = argparse.ArgumentParser()
@@ -31,5 +30,5 @@ if __name__ == '__main__':
         "port": None,
     }
     args = dict2args(args_dict)
-    model = local_model_runner.ResNet18Runner(args)
+    model = local_nns_runner.ResNet18Runner(args)
     model.runOnTVM()

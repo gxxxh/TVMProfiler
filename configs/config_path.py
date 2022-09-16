@@ -1,3 +1,3 @@
 
-basePath = "/root/guohao/TVMProfiler"
+basePath = "/home/gh/TVMProfiler"
 configSpacePath = basePath+"data/ConfigSpace/"

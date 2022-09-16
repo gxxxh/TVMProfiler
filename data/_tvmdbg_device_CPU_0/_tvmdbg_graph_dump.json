@@ -234,7 +234,7 @@
         },
         {
             "op": "tvmgen_default_fused_layout_transform",
-            "name": "tvmgen_default_fused_layout_transform1",
+            "name": "tvmgen_default_fused_layout_transform_1",
             "attrs": {
                 "num_outputs": "1",
                 "num_inputs": "1",
@@ -274,7 +274,7 @@
         },
         {
             "op": "tvmgen_default_fused_layout_transform_1",
-            "name": "tvmgen_default_fused_layout_transform_1",
+            "name": "tvmgen_default_fused_layout_transform_1_1",
             "attrs": {
                 "num_outputs": "1",
                 "num_inputs": "1",
@@ -327,7 +327,7 @@
                 "T": "type: float32"
             },
             "inputs": [
-                "tvmgen_default_fused_layout_transform_1",
+                "tvmgen_default_fused_layout_transform_1_1",
                 "p7"
             ],
             "shape": [
@@ -377,7 +377,7 @@
                 "T": "type: float32"
             },
             "inputs": [
-                "tvmgen_default_fused_layout_transform1",
+                "tvmgen_default_fused_layout_transform_1",
                 "p6",
                 "tvmgen_default_fused_layout_transform_2"
             ],
@@ -462,7 +462,7 @@
         },
         {
             "op": "tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_nn_relu_1",
-            "name": "tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_nn_relu_11",
+            "name": "tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_nn_relu_1_1",
             "attrs": {
                 "num_outputs": "1",
                 "num_inputs": "3",
@@ -489,7 +489,7 @@
         },
         {
             "op": "tvmgen_default_fused_layout_transform",
-            "name": "tvmgen_default_fused_layout_transform2",
+            "name": "tvmgen_default_fused_layout_transform_3",
             "attrs": {
                 "num_outputs": "1",
                 "num_inputs": "1",
@@ -501,7 +501,7 @@
                 "T": "type: float32"
             },
             "inputs": [
-                "tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_nn_relu_11"
+                "tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_nn_relu_1_1"
             ],
             "shape": [
                 1,
@@ -557,7 +557,7 @@
                 "T": "type: float32"
             },
             "inputs": [
-                "tvmgen_default_fused_layout_transform2",
+                "tvmgen_default_fused_layout_transform_3",
                 "p11",
                 "tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add",
                 "p12"
@@ -630,7 +630,7 @@
         },
         {
             "op": "tvmgen_default_fused_layout_transform_3",
-            "name": "tvmgen_default_fused_layout_transform_3",
+            "name": "tvmgen_default_fused_layout_transform_3_1",
             "attrs": {
                 "num_outputs": "1",
                 "num_inputs": "1",
@@ -749,7 +749,7 @@
                 "T": "type: float32"
             },
             "inputs": [
-                "tvmgen_default_fused_layout_transform_3",
+                "tvmgen_default_fused_layout_transform_3_1",
                 "p15",
                 "tvmgen_default_fused_nn_contrib_conv2d_NCHWc_1"
             ],
@@ -1462,7 +1462,7 @@
         },
         {
             "op": "tvmgen_default_fused_layout_transform_9",
-            "name": "tvmgen_default_fused_layout_transform_91",
+            "name": "tvmgen_default_fused_layout_transform_9_1",
             "attrs": {
                 "num_outputs": "1",
                 "num_inputs": "1",
@@ -1515,7 +1515,7 @@
                 "T": "type: float32"
             },
             "inputs": [
-                "tvmgen_default_fused_layout_transform_91",
+                "tvmgen_default_fused_layout_transform_9_1",
                 "p34"
             ],
             "shape": [
@@ -1653,7 +1653,7 @@
         },
         {
             "op": "tvmgen_default_fused_layout_transform_11",
-            "name": "tvmgen_default_fused_layout_transform_111",
+            "name": "tvmgen_default_fused_layout_transform_11_1",
             "attrs": {
                 "num_outputs": "1",
                 "num_inputs": "1",
@@ -1736,7 +1736,7 @@
                 "T": "type: float32"
             },
             "inputs": [
-                "tvmgen_default_fused_layout_transform_111",
+                "tvmgen_default_fused_layout_transform_11_1",
                 "p38",
                 "tvmgen_default_fused_nn_contrib_conv2d_NCHWc_add_3",
                 "p39",

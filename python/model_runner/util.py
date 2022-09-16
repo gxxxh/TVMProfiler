@@ -1,7 +1,8 @@
-from configs import config_path
+basePath = "/home/gh/TVMProfiler"
+configSpacePath = basePath+"data/ConfigSpace/"
 
 def WriteConfigSpace(tasks, model_name, target):
-    fName = config_path.configSpacePath + model_name + "-" + target + ".json"
+    fName = configSpacePath + model_name + "-" + target + ".json"
     f = open(fName, "w")
     for i, task in enumerate(tasks):
         # print(task)

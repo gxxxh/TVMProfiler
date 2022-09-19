@@ -24,5 +24,5 @@ export TVM_HOME=/root/github/tvm
 export PYTHONPATH=$TVM_HOME/python:/root/github/OpBench/python:$TVM_HOME/vta/python:${PYTHONPATH}
 export VTA_HW_PATH=$TVM_HOME/3rdparty/vta-hw
 
-echo 'ready to test:'
+echo 'ready to tests:'
 python3 -m tvm.driver.tvmc --help

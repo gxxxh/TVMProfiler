@@ -11,7 +11,7 @@ class TestPostGreExecutor:
         config = configparser.ConfigParser()
         config.read("/home/gh/TVMProfiler/python/model_profiler/config.ini", encoding="utf-8")
         postgre_config = config["postgresql"]
-        pc = PostGreExecutor(postgre_config["dbname"], postgre_config["username"],
+        pc = PostGreExecutor(postgre_config["database_name"], postgre_config["user_name"],
                              postgre_config["password"], postgre_config["host"], postgre_config["port"])
         pc.GetConnectionInfo()
         assert pc._conn != None
@@ -20,10 +20,9 @@ class TestPostGreExecutor:
         config = configparser.ConfigParser()
         config.read("/home/gh/TVMProfiler/python/model_profiler/config.ini", encoding="utf-8")
         postgre_config = config["postgresql"]
-        pc = PostGreExecutor(postgre_config["dbname"], postgre_config["username"], postgre_config["password"],
-                             postgre_config["host"], postgre_config["port"])
-        uid = "5f009d0a-3958-11ed-a1ba-f40270f2915a"
-        sql = "SELECT * FROM op_run_time WHERE execution_id='{}'".format(uid)
+        pc = PostGreExecutor(postgre_config["database_name"], postgre_config["user_name"],
+                             postgre_config["password"], postgre_config["host"], postgre_config["port"])
+        sql = "SELECT * FROM {}".format(postgre_config["model_record_table"])
         res = pc.ExceQuery(sql)
         print(res)
         assert len(res) != 0
@@ -32,19 +31,14 @@ class TestPostGreExecutor:
         config = configparser.ConfigParser()
         config.read("/home/gh/TVMProfiler/python/model_profiler/config.ini", encoding="utf-8")
         postgre_config = config["postgresql"]
-        pc = PostGreExecutor(postgre_config["dbname"], postgre_config["username"], postgre_config["password"],
-                             postgre_config["host"], postgre_config["port"])
+        pc = PostGreExecutor(postgre_config["database_name"], postgre_config["user_name"],
+                             postgre_config["password"], postgre_config["host"], postgre_config["port"])
         cur = psycopg2.TimestampFromTicks(time.time())
         execution_id = uuid.uuid1()
         # insert
-        sql = "INSERT INTO op_run_time(execution_id,start_time, node_id,node_name, node_start_time, time_list, avg_time) \
-                VALUES ('{}'::UUID,{},{},'{}',{},array{},{})".format( \
-            execution_id, cur, 0, "test_node_name", cur, [1.1, 1.2], 1.05)
-        res = pc.ExecNonQuery(sql)
-        assert res == True
-        sql = "INSERT INTO op_run_time(execution_id,start_time, node_id,node_name, node_start_time, time_list, avg_time) \
-                VALUES ('{}'::UUID,{},{},'{}',{},array{},{})".format( \
-            execution_id, cur, 1, "node_name1", cur, [1.1, 1.2], 1.05)
+        sql = "INSERT INTO {}(execution_id,start_time, num_ops, model_name) \
+                VALUES ('{}'::UUID,{},{},'{}')".format( \
+            postgre_config["model_record_table"],execution_id, cur, 0, "test_model_name")
         res = pc.ExecNonQuery(sql)
         assert res == True
 

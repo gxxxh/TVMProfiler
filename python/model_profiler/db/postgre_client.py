@@ -1,6 +1,7 @@
 from model_profiler.db import postgre_executor
 import uuid
 import time
+import psycopg2
 
 
 class PostGreSQLClient:
@@ -8,22 +9,39 @@ class PostGreSQLClient:
     this class is used to provide crud api for actions
     """
 
-    def __init__(self, database_name, user_name, password, host, port, table_name, table_schema="public"):
+    def __init__(self, database_name, user_name, password, host, port, model_record_table, op_record_table,
+                 table_schema):
         self.executor = postgre_executor.PostGreExecutor(database_name, user_name, password, host, port)
-        self.table_name = table_name
+        self.model_record_table = model_record_table
+        self.op_record_table = op_record_table
         self.table_schema = table_schema
-        self.columns = self.GetColumns()
 
-    def get_columns(self):
+    def get_columns(self, table_name):
+        """
+        get columns of the table
+        :return:
+        """
         sql = "select string_agg(column_name,',') " \
               "from information_schema.columns " \
               "where table_schema='{}' and table_name='{}'" \
-            .format(self.table_schema, self.table_name)
-
-        return self.executor.ExceQuery(sql)
+            .format(self.table_schema, table_name)
+        columns_str = (self.executor.ExceQuery(sql))[0][0]
+        columns = columns_str.split(",")
+        return columns
 
     def new_exeucte_id(self):
-        return uuid.uuid1(), time.time()
+        return uuid.uuid1(), psycopg2.TimestampFromTicks(time.time())
+
+    def insert_model_record(self, model_record):
+        sql = "INSERT INTO {}(execution_id, start_time, num_ops, model_name) " \
+              "VALUES ('{}'::UUID, {}, '{}', '{}');".format(
+            self.model_record_table,
+            model_record.get("execution_id"),
+            model_record.get("start_time"),
+            model_record.get("num_ops"),
+            model_record.get("model_name")
+        )
+        return self.executor.ExecNonQuery(sql)
 
     def insert_op_record(self, op_record):
         """
@@ -31,12 +49,11 @@ class PostGreSQLClient:
         :param input_dict:
         :return:
         """
-        sql = "INSERT INTO {}(execution_id, start_time, node_id, node_name, node_start_time, time_list, avg_time) \
-        VALUES ('{}'::UUID, {}, {}, '{}', {}, array{}, {});" \
+        sql = "INSERT INTO {}(execution_id , node_id, node_name, node_start_time, time_list, avg_time) \
+        VALUES ('{}'::UUID, {}, '{}', {}, array{}, {});" \
             .format(
-            self.table_name,
+            self.op_record_table,
             op_record.get("execution_id"),
-            op_record.get("start_time"),
             op_record.get("node_id"),
             op_record.get("node_name"),
             op_record.get("node_start_time"),
@@ -45,21 +62,24 @@ class PostGreSQLClient:
         )
         return self.executor.ExecNonQuery(sql)
 
-    def insert_model_record(self, **input_dict):
-        num = input_dict["num"]
+    def insert_op_records(self, op_records):
+        num = len(op_records)
         sql = "INSERT INTO {}" \
-              "(execution_id, start_time, node_id, node_name, node_start_time, time_list, avg_time) VALUES" \
-            .format(self.table_name)
+              "(execution_id, node_id, node_name, node_start_time, time_list, avg_time) VALUES" \
+            .format(self.op_record_table)
         for i in range(num):
-            sql += " ('{}'::UUID, {}, {}, '{}', {}, array{}, {}),".format(
-                input_dict["execution_id"][i],
-                input_dict["start_time"][i],
-                input_dict["node_id"][i],
-                input_dict["node_name"][i],
-                input_dict["node_start_time"][i],
-                input_dict["time_list"][i],
-                input_dict["avg_time"][i]
+            sql += " ('{}'::UUID, {}, '{}', {}, array{}, {})".format(
+                op_records[i].get("execution_id"),
+                op_records[i].get("node_id"),
+                op_records[i].get("node_name"),
+                op_records[i].get("node_start_time"),
+                op_records[i].get("time_list"),
+                op_records[i].get("avg_time")
             )
+            if i<num-1:
+                sql += ","
+            else:
+                sql += ";"
         return self.executor.ExecNonQuery(sql)
 
     def query_by_execution_id(self, execution_id):

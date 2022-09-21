@@ -50,9 +50,9 @@ class PostGreExecutor:
             self._conn.commit()
             flag = True
         except Exception as err:
-            flag = False
             self._conn.rollback()
             print("execute {} fail,err={}".format(sql, err))
+            return False
         else:
             return flag
 

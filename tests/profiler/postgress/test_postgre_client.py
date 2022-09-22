@@ -87,3 +87,12 @@ class TestPostGreClient():
         res = pc.query_by_execution_id(nid)
         print(res)
         assert isinstance(res, record.ModelRecord)
+
+    def test_query_all_execution_ids(self):
+        config = configparser.ConfigParser()
+        config.read("/home/gh/TVMProfiler/python/model_profiler/config.ini", encoding="utf-8")
+        postgre_config = config["postgresql"]
+        pc = PostGreSQLClient(**postgre_config)
+        res = pc.query_all_execution_ids()
+        print(res)
+        assert  len(res)!=None

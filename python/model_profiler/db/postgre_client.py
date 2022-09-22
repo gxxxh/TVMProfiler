@@ -118,3 +118,7 @@ class PostGreSQLClient:
         sql = "DELETE FROM {} WHERE execution_id='{}';".format(self.op_record_table, execution_id)
         res2 = self.executor.ExecNonQuery(sql)
         return res1 & res2
+
+    def query_all_execution_ids(self):
+        sql = "SELECT {} FROM {}".format("execution_id", self.model_record_table)
+        return self.executor.ExceQuery(sql)

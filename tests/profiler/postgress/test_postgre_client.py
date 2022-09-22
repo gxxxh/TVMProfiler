@@ -77,3 +77,12 @@ class TestPostGreClient():
         })
         res = pc.insert_op_records([op_record1, op_record2])
         assert res == True
+
+    def test_query_by_execution_id(self):
+        config = configparser.ConfigParser()
+        config.read("/home/gh/TVMProfiler/python/model_profiler/config.ini", encoding="utf-8")
+        postgre_config = config["postgresql"]
+        pc = PostGreSQLClient(**postgre_config)
+        nid = "a8e32342-3986-11ed-a1ba-f40270f2915a"
+        res = pc.query_by_execution_id(nid)
+        assert isinstance(res, record.ModelRecord)

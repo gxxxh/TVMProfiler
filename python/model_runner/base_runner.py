@@ -108,8 +108,8 @@ class ModelRunner():
 
     def tuneTasks(self, tasks, measure_option, tuner="xgb", n_trial=10, early_stopping=None, log_filename="tuning.log",
                   use_transfer_learning=True):
-        # create tmp log file
-        tmp_log_file = log_filename + ".tmp"
+        # create model_profiler log file
+        tmp_log_file = log_filename + ".model_profiler"
         if os.path.exists(tmp_log_file):
             os.remove(tmp_log_file)
 

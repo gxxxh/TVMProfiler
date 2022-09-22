@@ -2,6 +2,7 @@ from model_profiler.db import postgre_executor
 import uuid
 import time
 import psycopg2
+from model_profiler.internal import record
 
 
 class PostGreSQLClient:
@@ -15,6 +16,8 @@ class PostGreSQLClient:
         self.model_record_table = model_record_table
         self.op_record_table = op_record_table
         self.table_schema = table_schema
+        self.op_record_table_columns = self.get_columns(op_record_table)
+        self.model_record_table_columns = self.get_columns(model_record_table)
 
     def get_columns(self, table_name):
         """
@@ -88,8 +91,15 @@ class PostGreSQLClient:
         :param execution_id: uuid
         :return:
         """
-        sql = "SELECT * FROM {} WHERE execution_id='{}';".format(self.table_name, execution_id)
-        return self.executor.ExceQuery(sql)
+        sql = "SELECT * FROM {} WHERE execution_id='{}';".format(self.model_record_table, execution_id)
+        query_result = self.executor.ExceQuery(sql)
+        # todo len should be 1
+        model_record = record.ModelRecord(**dict(zip(self.model_record_table_columns, query_result[0])))
+        sql = "SELECT * FROM {} WHERE execution_id='{}';".format(self.op_record_table, execution_id)
+        op_records = self.executor.ExceQuery(sql)
+        for op_record in op_records:
+            model_record.op_records.append(record.OPRecord(**dict(zip(self.op_record_table_columns, op_record))))
+        return model_record
 
     def delete_by_execution_id(self, execution_id):
         """
@@ -97,5 +107,8 @@ class PostGreSQLClient:
         :param execution_id: uuid
         :return:
         """
-        sql = "DELETE FROM {} WHERE execution_id='{}';".format(self.table_name, execution_id)
-        return self.executor.ExecNonQuery(sql)
+        sql = "DELETE FROM {} WHERE execution_id='{}';".format(self.op_record_table_columns, execution_id)
+        res1  = self.executor.ExecNonQuery(sql)
+        sql = "DELETE FROM {} WHERE execution_id='{}';".format(self.op_record_table, execution_id)
+        res2 = self.executor.ExecNonQuery(sql)
+        return res1&res2

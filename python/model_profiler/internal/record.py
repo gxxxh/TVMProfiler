@@ -1,4 +1,6 @@
+import datetime
 import json
+import time
 from decimal import Decimal
 
 
@@ -23,9 +25,21 @@ class RecordBase():
 class OPRecord(RecordBase):
     """
     this class is used to describe a operator's executing record
+    node_start_time: timestamp;
     """
 
     def __init__(self, execution_id, node_id, node_start_time, node_name, time_list, avg_time):
+        """
+        node_start_time need to be timestamp
+        :param execution_id:
+        :param node_id:
+        :param node_start_time:
+        :param node_name:
+        :param time_list:
+        :param avg_time:
+        """
+        if (isinstance(node_start_time, datetime.datetime)):
+            node_start_time = time.mktime(node_start_time.timetuple()) + node_start_time.microsecond / 1000000.0
         self.execution_id = execution_id
         self.node_id = node_id
         self.node_start_time = node_start_time
@@ -40,6 +54,15 @@ class ModelRecord(RecordBase):
     """
 
     def __init__(self, execution_id, start_time, num_ops, model_name):
+        """
+        start_time need to be timestamp
+        :param execution_id:
+        :param start_time:
+        :param num_ops:
+        :param model_name:
+        """
+        if (isinstance(start_time, datetime.datetime)):
+            start_time = time.mktime(start_time.timetuple()) + start_time.microsecond / 1000000.0
         self.execution_id = execution_id
         self.start_time = start_time
         self.num_ops = num_ops

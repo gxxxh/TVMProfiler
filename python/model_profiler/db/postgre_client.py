@@ -33,9 +33,11 @@ class PostGreSQLClient:
         return columns
 
     def new_exeucte_id(self):
-        return uuid.uuid1(), psycopg2.TimestampFromTicks(time.time())
+        return uuid.uuid1(), time.time()
 
     def insert_model_record(self, model_record):
+        if isinstance(model_record.start_time, float):
+            model_record.start_time = psycopg2.TimestampFromTicks(model_record.start_time)
         sql = "INSERT INTO {}(execution_id, start_time, num_ops, model_name) " \
               "VALUES ('{}'::UUID, {}, '{}', '{}');".format(
             self.model_record_table,
@@ -52,6 +54,8 @@ class PostGreSQLClient:
         :param input_dict:
         :return:
         """
+        if isinstance(op_record.node_start_time, float):
+            op_record.node_start_time = psycopg2.TimestampFromTicks(op_record.node_start_time)
         sql = "INSERT INTO {}(execution_id , node_id, node_name, node_start_time, time_list, avg_time) \
         VALUES ('{}'::UUID, {}, '{}', {}, array{}, {});" \
             .format(
@@ -71,6 +75,8 @@ class PostGreSQLClient:
               "(execution_id, node_id, node_name, node_start_time, time_list, avg_time) VALUES" \
             .format(self.op_record_table)
         for i in range(num):
+            if isinstance(op_records[i].node_start_time, float):
+                op_records[i].node_start_time = psycopg2.TimestampFromTicks(op_records[i].node_start_time)
             sql += " ('{}'::UUID, {}, '{}', {}, array{}, {})".format(
                 op_records[i].get("execution_id"),
                 op_records[i].get("node_id"),
@@ -79,7 +85,7 @@ class PostGreSQLClient:
                 op_records[i].get("time_list"),
                 op_records[i].get("avg_time")
             )
-            if i<num-1:
+            if i < num - 1:
                 sql += ","
             else:
                 sql += ";"
@@ -108,7 +114,7 @@ class PostGreSQLClient:
         :return:
         """
         sql = "DELETE FROM {} WHERE execution_id='{}';".format(self.op_record_table_columns, execution_id)
-        res1  = self.executor.ExecNonQuery(sql)
+        res1 = self.executor.ExecNonQuery(sql)
         sql = "DELETE FROM {} WHERE execution_id='{}';".format(self.op_record_table, execution_id)
         res2 = self.executor.ExecNonQuery(sql)
-        return res1&res2
+        return res1 & res2

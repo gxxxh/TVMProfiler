@@ -1,5 +1,5 @@
 -- CREATE DATABASE profile_data ;
-\c profile_data;
+-- \c profile_data;
 DROP TABLE IF EXISTS op_record;
 DROP TABLE IF EXISTS model_record;
 CREATE TABLE model_record

@@ -41,11 +41,11 @@ class TestPostGreClient():
         config.read("/home/gh/TVMProfiler/python/model_profiler/config.ini", encoding="utf-8")
         postgre_config = config["postgresql"]
         pc = PostGreSQLClient(**postgre_config)
-        nid = "a8e32342-3986-11ed-a1ba-f40270f2915a"
+        nid = "7b7407ec-3a4d-11ed-a1ba-f40270f2915a"
         op_record = record.OPRecord(**{
             "execution_id": nid,
             "node_id": 0,
-            "node_start_time": psycopg2.TimestampFromTicks(time.time()),
+            "node_start_time": time.time(),
             "node_name": "name0",
             "time_list": [1.1, 1.2],
             "avg_time": 1.15
@@ -58,7 +58,7 @@ class TestPostGreClient():
         config.read("/home/gh/TVMProfiler/python/model_profiler/config.ini", encoding="utf-8")
         postgre_config = config["postgresql"]
         pc = PostGreSQLClient(**postgre_config)
-        nid = "a8e32342-3986-11ed-a1ba-f40270f2915a"
+        nid = "7b7407ec-3a4d-11ed-a1ba-f40270f2915a"
         op_record1 = record.OPRecord(**{
             "execution_id": nid,
             "node_id": 1,
@@ -83,6 +83,7 @@ class TestPostGreClient():
         config.read("/home/gh/TVMProfiler/python/model_profiler/config.ini", encoding="utf-8")
         postgre_config = config["postgresql"]
         pc = PostGreSQLClient(**postgre_config)
-        nid = "a8e32342-3986-11ed-a1ba-f40270f2915a"
+        nid = "7b7407ec-3a4d-11ed-a1ba-f40270f2915a"
         res = pc.query_by_execution_id(nid)
+        print(res)
         assert isinstance(res, record.ModelRecord)

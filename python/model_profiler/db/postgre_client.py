@@ -32,7 +32,8 @@ class PostGreSQLClient:
         columns = columns_str.split(",")
         return columns
 
-    def new_exeucte_id(self):
+    @staticmethod
+    def new_exeucte_id():
         return uuid.uuid1(), time.time()
 
     def insert_model_record(self, model_record):

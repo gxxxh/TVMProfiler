@@ -71,3 +71,4 @@ class ModelRecord(RecordBase):
 
     def add_op_record(self, op_record):
         self.op_records = self.op_records.append(op_record)
+        self.num_ops = len(self.op_records)

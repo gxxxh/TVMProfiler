@@ -16,7 +16,7 @@ class OutputGrabber(object):
     def __init__(self, stream=None, threaded=False, logPath="/home/gh/tmpLog/"):
         self.origstream = stream
         self.threaded = threaded
-        self.logPath = logPath + str(os.getpid()) + ".log"
+        self.logPath = logPath +  "/profile.log"
         if self.origstream is None:
             self.origstream = sys.stdout
         self.origstreamfd = self.origstream.fileno()

@@ -1,19 +1,11 @@
-import json
 import re
-
 
 class LogParser():
     """
     this class is using to parse op's execute time from the log
     """
-
-    def __init__(self, id, log_path, dump_path):
-        self.log_path = log_path + str(id) + ".log"
-        self.id = id
-        self._time_lists = []
-        self.dump_path = dump_path + str(id) + ".json"
-
-    def parseOpsTimeLogLine(self, line1, lines):
+    @staticmethod
+    def parseOpsTimeLogLine(line1, lines):
         """
         :param line1: operator's info log
         :param lines: operator's running times log
@@ -32,20 +24,21 @@ class LogParser():
             time_list.append(float(line[pos2 + 2:pos3]))
 
         return {
-            "start_time": start_time,
-            "node_index": op_index,
+            "node_start_time": start_time,
+            "node_id": op_index,
             "node_name": node_name,
-            "time_list": time_list
+            "time_list": time_list,
+            "avg_time": sum(time_list)/len(time_list)
         }
 
-        # line2 is used to get op avg time
-
-    def parseOpsTime(self):
+    @staticmethod
+    def parseOpsTime(log_path):
         """
         get the operators' execute time from the log
         :return:
         """
-        with open(self.log_path) as f:
+        _time_lists = []
+        with open(log_path) as f:
             line = f.readline()
             while line:
                 if re.search(r"graph\_executor\_debug.cc\:[0-9]+\:\ Op", line) != None:
@@ -58,17 +51,19 @@ class LogParser():
                             time_log = f.readline()
                         else:
                             break
-                    self._time_lists.append(self.parseOpsTimeLogLine(line, lines))
+                    _time_lists.append(LogParser.parseOpsTimeLogLine(line, lines))
                     line = time_log
                 else:
                     line = f.readline()
+        return _time_lists
 
-    def exportJson(self):
-        with open(self.dump_path, "w") as f:
-            json.dump(self._time_lists, f)
-
-    def exportCsv(self):
+    @staticmethod
+    def logTime2UnixTime(execution_start_time, node_start_time):
+        """
+        todo log time is not node start time, so it's meaningless
+        :param execution_start_time:
+        :param node_start_time:
+        :return:
+        """
         pass
 
-    def exportChromeTrace(self):
-        pass

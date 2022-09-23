@@ -1,6 +1,6 @@
 import time
 
-from model_profiler.db.postgre_client import PostGreSQLClient
+from model_profiler.db.postgre_client import PostGreClient
 import configparser
 from model_profiler.internal import record
 import psycopg2
@@ -11,8 +11,8 @@ class TestPostGreClient():
     def test_get_columns(self):
         config = configparser.ConfigParser()
         config.read("/home/gh/TVMProfiler/python/model_profiler/config.ini", encoding="utf-8")
-        postgre_config = config["postgresql"]
-        pc = PostGreSQLClient(**postgre_config)
+        postgre_config = config["PostGre"]
+        pc = PostGreClient(**postgre_config)
         columns_info = pc.get_columns(pc.model_record_table)
         print(columns_info)
         assert len(columns_info) != 0
@@ -20,8 +20,8 @@ class TestPostGreClient():
     def test_new_execute_id(self):
         config = configparser.ConfigParser()
         config.read("/home/gh/TVMProfiler/python/model_profiler/config.ini", encoding="utf-8")
-        postgre_config = config["postgresql"]
-        pc = PostGreSQLClient(**postgre_config)
+        postgre_config = config["PostGre"]
+        pc = PostGreClient(**postgre_config)
         nid, cur = pc.new_exeucte_id()
         assert nid != None
         assert cur != None
@@ -29,8 +29,8 @@ class TestPostGreClient():
     def test_insert_model_record(self):
         config = configparser.ConfigParser()
         config.read("/home/gh/TVMProfiler/python/model_profiler/config.ini", encoding="utf-8")
-        postgre_config = config["postgresql"]
-        pc = PostGreSQLClient(**postgre_config)
+        postgre_config = config["PostGre"]
+        pc = PostGreClient(**postgre_config)
         nid, cur = pc.new_exeucte_id()
         model_record = record.ModelRecord(nid, cur, 0, "test0")
         res = pc.insert_model_record(model_record)
@@ -39,8 +39,8 @@ class TestPostGreClient():
     def test_insert_op_record(self):
         config = configparser.ConfigParser()
         config.read("/home/gh/TVMProfiler/python/model_profiler/config.ini", encoding="utf-8")
-        postgre_config = config["postgresql"]
-        pc = PostGreSQLClient(**postgre_config)
+        postgre_config = config["PostGre"]
+        pc = PostGreClient(**postgre_config)
         nid = "7b7407ec-3a4d-11ed-a1ba-f40270f2915a"
         op_record = record.OPRecord(**{
             "execution_id": nid,
@@ -56,8 +56,8 @@ class TestPostGreClient():
     def test_insert_op_records(self):
         config = configparser.ConfigParser()
         config.read("/home/gh/TVMProfiler/python/model_profiler/config.ini", encoding="utf-8")
-        postgre_config = config["postgresql"]
-        pc = PostGreSQLClient(**postgre_config)
+        postgre_config = config["PostGre"]
+        pc = PostGreClient(**postgre_config)
         nid = "7b7407ec-3a4d-11ed-a1ba-f40270f2915a"
         op_record1 = record.OPRecord(**{
             "execution_id": nid,
@@ -81,8 +81,8 @@ class TestPostGreClient():
     def test_query_by_execution_id(self):
         config = configparser.ConfigParser()
         config.read("/home/gh/TVMProfiler/python/model_profiler/config.ini", encoding="utf-8")
-        postgre_config = config["postgresql"]
-        pc = PostGreSQLClient(**postgre_config)
+        postgre_config = config["PostGre"]
+        pc = PostGreClient(**postgre_config)
         nid = "7b7407ec-3a4d-11ed-a1ba-f40270f2915a"
         res = pc.query_by_execution_id(nid)
         print(res)
@@ -91,8 +91,8 @@ class TestPostGreClient():
     def test_query_all_execution_ids(self):
         config = configparser.ConfigParser()
         config.read("/home/gh/TVMProfiler/python/model_profiler/config.ini", encoding="utf-8")
-        postgre_config = config["postgresql"]
-        pc = PostGreSQLClient(**postgre_config)
+        postgre_config = config["PostGre"]
+        pc = PostGreClient(**postgre_config)
         res = pc.query_all_execution_ids()
         print(res)
         assert  len(res)!=None

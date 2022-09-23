@@ -1,17 +1,29 @@
 from model_profiler.db import postgre_executor
+from model_profiler.db.save_client import SaveClient
 import uuid
 import time
 import psycopg2
 from model_profiler.internal import record
 
 
-class PostGreSQLClient:
+class PostGreClient():
     """
     this class is used to provide crud api for actions
     """
 
     def __init__(self, database_name, user_name, password, host, port, model_record_table, op_record_table,
                  table_schema):
+        """
+        todo using config as the parameter
+        :param database_name:
+        :param user_name:
+        :param password:
+        :param host:
+        :param port:
+        :param model_record_table:
+        :param op_record_table:
+        :param table_schema:
+        """
         self.executor = postgre_executor.PostGreExecutor(database_name, user_name, password, host, port)
         self.model_record_table = model_record_table
         self.op_record_table = op_record_table
@@ -50,6 +62,7 @@ class PostGreSQLClient:
         return self.executor.ExecNonQuery(sql)
 
     def insert_op_record(self, op_record):
+
         """
         insert one record
         :param input_dict:

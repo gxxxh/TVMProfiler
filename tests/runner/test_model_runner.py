@@ -3,7 +3,7 @@ import os
 from tvm import autotvm
 import argparse
 from model_runner import local_nns_runner
-from model_profiler import tvm_profiler
+from model_profiler.internal import tvm_profiler
 
 def dict2args(args_dict):
     parser = argparse.ArgumentParser()

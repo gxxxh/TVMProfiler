@@ -1,6 +1,34 @@
+from abc import abstractmethod
+import time, uuid
+
+
 class SaveClient:
     def __init__(self):
-        self.name = "base save client"
+        print("this is base class for save log")
+
+    @staticmethod
+    def new_execute_id():
+        return str(uuid.uuid1()), time.time()
+
+    @abstractmethod
+    def insert_model_record(self, model_record):
+        raise NotImplementedError
+
+    # @abstractmethod
+    # def insert_op_record(self, op_record):
+    #     raise NotImplementedError
+    #
+    # @abstractmethod
+    # def insert_op_records(self, op_records):
+    #     raise NotImplementedError
+
+    @abstractmethod
+    def query_by_execution_id(self, execution_id):
+        raise NotImplementedError
+
+    @abstractmethod
+    def delete_by_execution_id(self, execution_id):
+        raise NotImplementedError
 
 
 def GetSaveClient(client_type):

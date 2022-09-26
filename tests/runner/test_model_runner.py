@@ -34,6 +34,6 @@ if __name__ == '__main__':
     }
     args = dict2args(args_dict)
     model = local_nns_runner.ResNet18Runner(args)
-    with tvm_profiler.Profiler() as tp:
+    with tvm_profiler.Profiler(save_type="FS") as tp:
         model.runOnTVM()
     print("finish")

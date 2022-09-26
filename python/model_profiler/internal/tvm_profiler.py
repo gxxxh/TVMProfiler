@@ -1,7 +1,7 @@
 import os
 import sys
 from model_profiler.internal import log_redirector
-from model_profiler.db.save_client import GetSaveClient
+from model_profiler.db.save_client import GetSaveClient, SaveClient
 
 from . import record
 from model_profiler.db import postgre_client
@@ -26,7 +26,7 @@ class Profiler():
         :param save_config: dict
         """
         self.mode = mode
-        self.execution_id, self.start_time = postgre_client.PostGreClient.new_exeucte_id()
+        self.execution_id, self.start_time = SaveClient.new_execute_id()
         if model_name == "":
             self.model_name = str(os.getpid()) + "." + str(self.execution_id)
         else:
@@ -57,5 +57,4 @@ class Profiler():
                 avg_time=log_record["avg_time"]
             ))
         self.save_client.insert_model_record(self.model_record)
-        self.save_client.insert_op_records(self.model_record.op_records)
         print("end profileing")

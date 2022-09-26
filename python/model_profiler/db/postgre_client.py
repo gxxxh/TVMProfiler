@@ -1,12 +1,10 @@
 from model_profiler.db import postgre_executor
-from model_profiler.db.save_client import SaveClient
-import uuid
-import time
+from . import save_client
 import psycopg2
 from model_profiler.internal import record
 
 
-class PostGreClient():
+class PostGreClient(save_client.SaveClient):
     """
     this class is used to provide crud api for actions
     """
@@ -44,9 +42,9 @@ class PostGreClient():
         columns = columns_str.split(",")
         return columns
 
-    @staticmethod
-    def new_exeucte_id():
-        return uuid.uuid1(), time.time()
+    # @staticmethod
+    # def new_exeucte_id():
+    #     return uuid.uuid1(), time.time()
 
     def insert_model_record(self, model_record):
         if isinstance(model_record.start_time, float):
@@ -59,7 +57,8 @@ class PostGreClient():
             model_record.get("num_ops"),
             model_record.get("model_name")
         )
-        return self.executor.ExecNonQuery(sql)
+        insert_res = self.executor.ExecNonQuery(sql) and self.insert_op_records(model_record.op_records)
+        return insert_res
 
     def insert_op_record(self, op_record):
 

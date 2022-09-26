@@ -56,7 +56,7 @@ class ModelRecord(RecordBase):
     def __init__(self, execution_id, start_time, num_ops, model_name):
         """
         start_time need to be timestamp
-        :param execution_id:
+        :param execution_id: generate by uuid, need to be type str
         :param start_time:
         :param num_ops:
         :param model_name:

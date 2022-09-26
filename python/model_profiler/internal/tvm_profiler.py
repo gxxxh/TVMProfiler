@@ -1,10 +1,9 @@
 import os
 import sys
-from model_profiler.internal import log_redirector
+from model_profiler.util import log_redirector
 from model_profiler.db.save_client import GetSaveClient, SaveClient
 
 from . import record
-from model_profiler.db import postgre_client
 from model_profiler.util.log_parser import LogParser
 import configparser
 
@@ -16,7 +15,8 @@ class Profiler():
     using python context to wrap the client's code.
     """
 
-    def __init__(self, mode="Debug", logPath="/home/gh/tmpLog/", model_name="", save_type="PostGre", save_config_path="/home/gh/TVMProfiler/python/model_profiler/config.ini"):
+    def __init__(self, mode="Debug", logPath="/home/gh/tmpLog/", model_name="", save_type="PostGre",
+                 save_config_path="/home/gh/TVMProfiler/python/model_profiler/config.ini"):
         """
 
         :param mode:

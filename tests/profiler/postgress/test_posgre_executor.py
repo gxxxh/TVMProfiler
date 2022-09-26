@@ -38,7 +38,7 @@ class TestPostGreExecutor:
         # insert
         sql = "INSERT INTO {}(execution_id,start_time, num_ops, model_name) \
                 VALUES ('{}'::UUID,{},{},'{}')".format( \
-            postgre_config["model_record_table"],execution_id, cur, 0, "test_model_name")
+            postgre_config["model_record_table"], execution_id, cur, 0, "test_model_name")
         res = pc.ExecNonQuery(sql)
         assert res == True
 

@@ -29,3 +29,6 @@ class FSClient(save_client.SaveClient):
         if os.path.exists(file_path):
             os.remove(file_path)
         return
+
+    def query_all_execution_ids(self):
+        pass

@@ -118,6 +118,7 @@ class PostGreClient(save_client.SaveClient):
         op_records = self.executor.ExceQuery(sql)
         for op_record in op_records:
             model_record.op_records.append(record.OPRecord(**dict(zip(self.op_record_table_columns, op_record))))
+        # print(model_record)
         return model_record
 
     def delete_by_execution_id(self, execution_id):
@@ -134,4 +135,5 @@ class PostGreClient(save_client.SaveClient):
 
     def query_all_execution_ids(self):
         sql = "SELECT {} FROM {}".format("execution_id", self.model_record_table)
-        return self.executor.ExceQuery(sql)
+        execution_ids = self.executor.ExceQuery(sql)
+        return [item[0] for item in execution_ids]

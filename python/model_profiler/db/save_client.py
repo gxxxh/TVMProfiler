@@ -30,6 +30,10 @@ class SaveClient:
     def delete_by_execution_id(self, execution_id):
         raise NotImplementedError
 
+    @abstractmethod
+    def query_all_execution_ids(self):
+        raise NotImplementedError
+
 
 def GetSaveClient(client_type):
     """

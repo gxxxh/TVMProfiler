@@ -36,10 +36,11 @@
     - [ ] 通过重定向的方式实现wrapperL
       - [x] 直接重定向，直接对stdout和stderr进行赋值重定向，只能重定向python端的信息，不能重定向C++端的信息
       - [x] 使用管道 成功实现
-    - [ ] 日志分析
-      - [ ] 导出json
-      - [ ] postgress增删查改
-      - [ ] django配置路由
+    - [x] 日志分析
+      - [x] 导出json
+      - [x] postgress增删查改
+      - [x] django配置路由
+  - python 代码添加异常处理
 - 硬件资源监测
   - [ ] 调研如何监测runtime进程：
     - [ ] runtime进程如何启动？

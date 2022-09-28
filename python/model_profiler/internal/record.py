@@ -5,8 +5,10 @@ import time
 
 class RecordBase():
     def toJSON(self):
+        # return json.dumps(self, default=lambda o: o.__dict__,
+        #                   sort_keys=True, indent=4, ensure_ascii=False)
         return json.dumps(self, default=lambda o: o.__dict__,
-                          sort_keys=True, indent=4)
+                          sort_keys=False, indent=4, ensure_ascii=False)
 
     def __str__(self):
         return self.toJSON()
@@ -52,7 +54,7 @@ class ModelRecord(RecordBase):
     this class is using to describe a model's inference record
     """
 
-    def __init__(self, execution_id, start_time, num_ops, model_name):
+    def __init__(self, execution_id, start_time, num_ops, model_name, op_records=[]):
         """
         start_time need to be timestamp
         :param execution_id: generate by uuid, need to be type str
@@ -66,7 +68,7 @@ class ModelRecord(RecordBase):
         self.start_time = start_time
         self.num_ops = num_ops
         self.model_name = model_name
-        self.op_records = []
+        self.op_records = op_records
 
     def add_op_record(self, op_record):
         self.op_records.append(op_record)

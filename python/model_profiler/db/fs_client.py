@@ -1,6 +1,7 @@
 import os.path
-
+import json
 from . import save_client
+from model_profiler.internal import record
 
 
 class FSClient(save_client.SaveClient):
@@ -20,9 +21,12 @@ class FSClient(save_client.SaveClient):
 
     def query_by_execution_id(self, execution_id):
         file_path = self.dump_path + "/" + execution_id + ".json"
+        if not os.path.exists(file_path):
+            return ""
         with open(file_path, "r") as f:
-            model_record_json = f.readlines()
-            return model_record_json
+            model_record_dict = json.load(f)
+            model_record = record.ModelRecord(**model_record_dict)
+            return model_record
 
     def delete_by_execution_id(self, execution_id):
         file_path = self.dump_path + "/" + execution_id + ".json"
@@ -31,4 +35,7 @@ class FSClient(save_client.SaveClient):
         return
 
     def query_all_execution_ids(self):
-        pass
+        if not os.path.exists(self.dump_path):
+            return "Error, log path not exist!!!"
+        file_names = os.listdir(self.dump_path)
+        return [file_name for file_name in file_names if file_name.find(".json") != -1]

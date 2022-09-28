@@ -59,7 +59,3 @@ todo
 todo
 
 ## 源代码修改
-1. debug_executor.py run:
-   1. 修改参数，使得结果只保存chrome_trace，不要tensor,
-   2. result 从打印转为输入到文件中
-   3. 时间测量的信息保存在self.__nodes_list和self.__time_list中
